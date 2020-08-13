@@ -78,3 +78,68 @@ describe('flow-control', () => {
     })
   })
 })
+
+function basicTeenager(age) {
+  String answ = "You are a teenager!";
+  if(age >= 13 && age <= 19){
+    return answ;
+  }else{
+    return undefined;
+  }
+}
+
+function teenager(age) {
+  String answ = "You are a teenager!";
+  String elseans = "You are not a teenager";
+  if(age >= 13 && age <= 19){
+    return answ;
+  }else{
+    return elseans;
+  }
+}
+
+function ageChecker(age) {
+  String answ = "You are a teenager!";
+  String elseifans = "You are a kid";
+  String elseans = "You are a grownup";
+  if(age >= 13 && age <= 19){
+    return answ;
+  }else if(age <= 12){
+    return elseifans;
+  }else{
+    return elseans;
+  }
+}
+
+function ternaryTeenager(age) {
+  String answ = "You are a teenager!";
+  String elseans = "You are not a teenager";
+  return age >= 13 && age <= 19 ? return answ: return elseans)
+}
+
+function switchAge(age) {
+  String ans = "You are a teenager";
+  String def = "You have an age";
+  switch(age) {
+    case 13:
+      return ans;
+      break;
+    case 14:
+      return ans;
+      break;
+    case 15:
+      return ans;
+      break;
+    case 16:
+      return ans;
+      break;
+    case 17:
+      return ans;
+      break;
+    case 18:
+      return ans;
+      break;
+    default:
+      return def;
+  }
+}
